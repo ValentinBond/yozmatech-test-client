@@ -1,54 +1,62 @@
-# React + TypeScript + Vite
+Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a modern web application built using Vite, React, and TypeScript. It leverages powerful libraries like @radix-ui for UI components and TanStack Table for advanced table functionalities. TanStack Query is also integrated to efficiently manage API requests and caching.
 
-Currently, two official plugins are available:
+Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Authentication: Sign-up and sign-in functionality.
 
-## Expanding the ESLint configuration
+Song List Management:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+View a list of songs.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
-```
+Sorting and filtering capabilities.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Modern UI powered by @radix-ui.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x';
-import reactDom from 'eslint-plugin-react-dom';
+Optimized Data Handling using TanStack Table and TanStack Query.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-});
-```
+Tech Stack
+
+Vite – Fast build tool for frontend development.
+
+React – Component-based UI library.
+
+TypeScript – Strongly typed JavaScript.
+
+@radix-ui – Accessible, unstyled components.
+
+TanStack Table – Advanced table management.
+
+TanStack Query – Data fetching and caching.
+
+Pages
+
+Authentication Page (Sign-up / Sign-in)
+
+Song List Page (Sortable, filterable table of songs)
+
+Installation & Setup
+
+Clone the repository:
+
+git clone https://github.com/ValentinBond/yozmatech-test-client
+
+Navigate to the project directory:
+
+cd project-name
+
+Install dependencies:
+
+npm install
+
+
+Start the development server:
+
+npm run dev
+
+Usage
+
+Sign up or sign in to access the song list.
+
+Use sorting and filtering features to explore the songs efficiently.
