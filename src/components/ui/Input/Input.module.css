@@ -1,0 +1,26 @@
+
+.input {
+    background: var(--input-bgr-color);
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--input-border-color);
+    color: var(--text-color);
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.input:focus {
+    border-color: var(--input-focus-border-color);
+    outline: none;
+}
+
+.input.error {
+    border-color: var(--error-color);
+}
+
+.input.success {
+    border-color: var(--success-color);
+}
